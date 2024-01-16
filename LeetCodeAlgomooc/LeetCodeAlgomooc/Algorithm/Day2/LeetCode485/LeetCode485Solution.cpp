@@ -6,3 +6,7 @@
 //
 
 #include "LeetCode485Solution.hpp"
+
+int LeetCode485Solution::findMaxConsecutiveOnes(const std::vector<int> &nums) {
+    return -1;
+}
