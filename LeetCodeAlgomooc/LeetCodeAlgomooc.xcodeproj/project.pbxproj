@@ -16,6 +16,7 @@
 		846B175A2B5673AE000C28D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846B17582B5673AE000C28D9 /* LaunchScreen.storyboard */; };
 		846B175D2B5673AE000C28D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B175C2B5673AE000C28D9 /* main.m */; };
 		846B17672B567AA5000C28D9 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B17662B567AA5000C28D9 /* BaseViewController.m */; };
+		846B176E2B56814D000C28D9 /* LeetCode485VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B176C2B56814D000C28D9 /* LeetCode485VC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		846B175C2B5673AE000C28D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		846B17652B567AA5000C28D9 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		846B17662B567AA5000C28D9 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		846B176C2B56814D000C28D9 /* LeetCode485VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeetCode485VC.m; sourceTree = "<group>"; };
+		846B176D2B56814D000C28D9 /* LeetCode485VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeetCode485VC.h; sourceTree = "<group>"; };
 		9C84FC049BD564474026811A /* Pods-LeetCodeAlgomooc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeetCodeAlgomooc.debug.xcconfig"; path = "Target Support Files/Pods-LeetCodeAlgomooc/Pods-LeetCodeAlgomooc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +67,6 @@
 				9C84FC049BD564474026811A /* Pods-LeetCodeAlgomooc.debug.xcconfig */,
 				6244DF7DA4E64F3C58E6A4C5 /* Pods-LeetCodeAlgomooc.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,8 +120,18 @@
 		846B17642B567689000C28D9 /* Day2 */ = {
 			isa = PBXGroup;
 			children = (
+				846B176B2B56814D000C28D9 /* LeetCode485 */,
 			);
 			path = Day2;
+			sourceTree = "<group>";
+		};
+		846B176B2B56814D000C28D9 /* LeetCode485 */ = {
+			isa = PBXGroup;
+			children = (
+				846B176D2B56814D000C28D9 /* LeetCode485VC.h */,
+				846B176C2B56814D000C28D9 /* LeetCode485VC.m */,
+			);
+			path = LeetCode485;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846B17522B5673A3000C28D9 /* ViewController.m in Sources */,
+				846B176E2B56814D000C28D9 /* LeetCode485VC.m in Sources */,
 				846B17672B567AA5000C28D9 /* BaseViewController.m in Sources */,
 				846B174C2B5673A3000C28D9 /* AppDelegate.m in Sources */,
 				846B175D2B5673AE000C28D9 /* main.m in Sources */,

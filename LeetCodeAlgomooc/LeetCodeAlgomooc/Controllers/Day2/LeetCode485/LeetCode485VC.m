@@ -1,23 +1,21 @@
 //
-//  BaseViewController.m
+//  LeetCode485VC.m
 //  LeetCodeAlgomooc
 //
 //  Created by admin on 2024/1/16.
 //
 
-#import "BaseViewController.h"
+#import "LeetCode485VC.h"
 
-@interface BaseViewController ()
+@interface LeetCode485VC ()
 
 @end
 
-@implementation BaseViewController
+@implementation LeetCode485VC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self createLayout];
 }
 
 /*
@@ -29,9 +27,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (void)createLayout {
-    
-}
 
 @end
