@@ -16,6 +16,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.descLable.text = @"给定一个二进制数组 nums，计算其中最大连续 1 的个数。\n"
+    "示例 1：\n"
+    "输入：nums = [1,1,0,1,1,1] 输出：3. 解释：开头的两位和最后的三位都是连续 1 ，所以最大连续 1 的个数是 3.\n"
+    "示例 2:\n"
+    "输入：nums = [1,0,1,1,0,1] 输出：2\n"
+    "提示：\n"
+    "· 1 <= nums.length <= 10^5\n"
+    "· nums[i] 不是 0 就是 1.\n\n"
+    "请输入：";
 }
 
 /*
