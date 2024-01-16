@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306D22559416338AB65A73DE /* Pods_LeetCodeAlgomooc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F383880C34361E1BB0BB6F /* Pods_LeetCodeAlgomooc.framework */; };
 		846B174C2B5673A3000C28D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B174B2B5673A3000C28D9 /* AppDelegate.m */; };
 		846B174F2B5673A3000C28D9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B174E2B5673A3000C28D9 /* SceneDelegate.m */; };
 		846B17522B5673A3000C28D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B17512B5673A3000C28D9 /* ViewController.m */; };
@@ -14,9 +15,12 @@
 		846B17572B5673AE000C28D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846B17562B5673AE000C28D9 /* Assets.xcassets */; };
 		846B175A2B5673AE000C28D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846B17582B5673AE000C28D9 /* LaunchScreen.storyboard */; };
 		846B175D2B5673AE000C28D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B175C2B5673AE000C28D9 /* main.m */; };
+		846B17672B567AA5000C28D9 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B17662B567AA5000C28D9 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6244DF7DA4E64F3C58E6A4C5 /* Pods-LeetCodeAlgomooc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeetCodeAlgomooc.release.xcconfig"; path = "Target Support Files/Pods-LeetCodeAlgomooc/Pods-LeetCodeAlgomooc.release.xcconfig"; sourceTree = "<group>"; };
+		69F383880C34361E1BB0BB6F /* Pods_LeetCodeAlgomooc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeetCodeAlgomooc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		846B17472B5673A3000C28D9 /* LeetCodeAlgomooc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCodeAlgomooc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846B174A2B5673A3000C28D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		846B174B2B5673A3000C28D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +33,9 @@
 		846B17592B5673AE000C28D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846B175B2B5673AE000C28D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846B175C2B5673AE000C28D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		846B17652B567AA5000C28D9 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		846B17662B567AA5000C28D9 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9C84FC049BD564474026811A /* Pods-LeetCodeAlgomooc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeetCodeAlgomooc.debug.xcconfig"; path = "Target Support Files/Pods-LeetCodeAlgomooc/Pods-LeetCodeAlgomooc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306D22559416338AB65A73DE /* Pods_LeetCodeAlgomooc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C04394F474ED7911103DD0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69F383880C34361E1BB0BB6F /* Pods_LeetCodeAlgomooc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A829EE0F5FC4A06291719E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C84FC049BD564474026811A /* Pods-LeetCodeAlgomooc.debug.xcconfig */,
+				6244DF7DA4E64F3C58E6A4C5 /* Pods-LeetCodeAlgomooc.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		846B173E2B5673A3000C28D9 = {
 			isa = PBXGroup;
 			children = (
 				846B17492B5673A3000C28D9 /* LeetCodeAlgomooc */,
 				846B17482B5673A3000C28D9 /* Products */,
+				7A829EE0F5FC4A06291719E5 /* Pods */,
+				4C04394F474ED7911103DD0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +100,26 @@
 				846B17582B5673AE000C28D9 /* LaunchScreen.storyboard */,
 				846B175B2B5673AE000C28D9 /* Info.plist */,
 				846B175C2B5673AE000C28D9 /* main.m */,
+				846B17632B5674E8000C28D9 /* Controllers */,
 			);
 			path = LeetCodeAlgomooc;
+			sourceTree = "<group>";
+		};
+		846B17632B5674E8000C28D9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				846B17652B567AA5000C28D9 /* BaseViewController.h */,
+				846B17662B567AA5000C28D9 /* BaseViewController.m */,
+				846B17642B567689000C28D9 /* Day2 */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		846B17642B567689000C28D9 /* Day2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Day2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 846B17602B5673AE000C28D9 /* Build configuration list for PBXNativeTarget "LeetCodeAlgomooc" */;
 			buildPhases = (
+				624AD6A4E33013AAA62E1B6F /* [CP] Check Pods Manifest.lock */,
 				846B17432B5673A3000C28D9 /* Sources */,
 				846B17442B5673A3000C28D9 /* Frameworks */,
 				846B17452B5673A3000C28D9 /* Resources */,
+				61174DF209722ECD2004FB34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,12 +189,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61174DF209722ECD2004FB34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeetCodeAlgomooc/Pods-LeetCodeAlgomooc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeetCodeAlgomooc/Pods-LeetCodeAlgomooc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeetCodeAlgomooc/Pods-LeetCodeAlgomooc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		624AD6A4E33013AAA62E1B6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeetCodeAlgomooc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		846B17432B5673A3000C28D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				846B17522B5673A3000C28D9 /* ViewController.m in Sources */,
+				846B17672B567AA5000C28D9 /* BaseViewController.m in Sources */,
 				846B174C2B5673A3000C28D9 /* AppDelegate.m in Sources */,
 				846B175D2B5673AE000C28D9 /* main.m in Sources */,
 				846B174F2B5673A3000C28D9 /* SceneDelegate.m in Sources */,
@@ -289,6 +380,7 @@
 		};
 		846B17612B5673AE000C28D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C84FC049BD564474026811A /* Pods-LeetCodeAlgomooc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +393,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +408,7 @@
 		};
 		846B17622B5673AE000C28D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6244DF7DA4E64F3C58E6A4C5 /* Pods-LeetCodeAlgomooc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +421,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

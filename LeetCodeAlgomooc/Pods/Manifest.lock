@@ -1,0 +1,21 @@
+PODS:
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - Masonry (from `https://github.com/clayzhu/Masonry.git`)
+
+EXTERNAL SOURCES:
+  Masonry:
+    :git: https://github.com/clayzhu/Masonry.git
+
+CHECKOUT OPTIONS:
+  Masonry:
+    :commit: 4ac197ea647eac7e6141f2dbb71bcd841157f784
+    :git: https://github.com/clayzhu/Masonry.git
+
+SPEC CHECKSUMS:
+  Masonry: 484d2726e7bedaa62a09e4e46b63a18d25ebffd4
+
+PODFILE CHECKSUM: 0f29f8ad23df5a620b91fa287021a0de1e6cb92d
+
+COCOAPODS: 1.12.1
