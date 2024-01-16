@@ -7,6 +7,8 @@
 
 #import "LeetCode485VC.h"
 
+#include "LeetCode485Solution.hpp"
+
 @interface LeetCode485VC ()
 
 @end
