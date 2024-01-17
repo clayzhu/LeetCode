@@ -11,7 +11,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (copy, nonatomic) NSArray<NSDictionary<NSString*, NSArray*>*> *cellTextList;
-@property (copy, nonatomic) NSArray<NSArray*> *cellDestinationVCList;
+@property (copy, nonatomic) NSArray<NSDictionary<NSString*, NSArray*>*> *cellDestinationVCList;
 
 @end
 
@@ -29,18 +29,20 @@
         _cellTextList = @[
             @{@"Day2":@[
                 @"LeetCode 485、最大连续 1 的个数",
+                @"LeetCode 283、移动零",
             ]},
         ];
     }
     return _cellTextList;
 }
 
-- (NSArray<NSArray *> *)cellDestinationVCList {
+- (NSArray<NSDictionary<NSString *,NSArray *> *> *)cellDestinationVCList {
     if (!_cellDestinationVCList) {
         _cellDestinationVCList = @[
-            @[
+            @{@"Day2":@[
                 @"LeetCode485VC",
-            ],
+                @"LeetCode283VC",
+            ]},
         ];
     }
     return _cellDestinationVCList;
@@ -56,7 +58,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.cellTextList[section].allValues.count;
+    return self.cellTextList[section].allValues.firstObject.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -73,7 +75,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    NSString *destinationVCName = self.cellDestinationVCList[indexPath.section][indexPath.row];
+    NSString *destinationVCName = self.cellDestinationVCList[indexPath.section].allValues.firstObject[indexPath.row];
     Class destinationVCClass = NSClassFromString(destinationVCName);
     UIViewController *destinationVC = [[destinationVCClass alloc] init];
     destinationVC.title = self.cellTextList[indexPath.section].allValues.firstObject[indexPath.row];
