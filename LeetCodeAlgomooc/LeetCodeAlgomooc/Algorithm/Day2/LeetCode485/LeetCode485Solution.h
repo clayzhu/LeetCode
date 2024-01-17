@@ -1,18 +1,17 @@
 //
-//  LeetCode485Solution.hpp
+//  LeetCode485Solution.h
 //  LeetCodeAlgomooc
 //
-//  Created by admin on 2024/1/16.
+//  Created by Yukin Yang on 2024/1/17.
 //
 
-#ifndef LeetCode485Solution_hpp
-#define LeetCode485Solution_hpp
+#ifndef LeetCode485Solution_h
+#define LeetCode485Solution_h
 
-#include <stdio.h>
 #include <vector>
 
 /// LeetCode 485、最大连续 1 的个数
-/// 
+///
 /// 给定一个二进制数组 nums，计算其中最大连续 1 的个数。
 /// 示例 1：
 /// 输入：nums = [1,1,0,1,1,1] 输出：3. 解释：开头的两位和最后的三位都是连续 1 ，所以最大连续 1 的个数是 3.
@@ -47,4 +46,4 @@ public:
     
 };
 
-#endif /* LeetCode485Solution_hpp */
+#endif /* LeetCode485Solution_h */
