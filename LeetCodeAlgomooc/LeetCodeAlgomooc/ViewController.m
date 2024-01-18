@@ -30,6 +30,7 @@
             @{@"Day2":@[
                 @"LeetCode 485、最大连续 1 的个数",
                 @"LeetCode 283、移动零",
+                @"LeetCode 26、删除有序数组中的重复项",
             ]},
         ];
     }
@@ -42,6 +43,7 @@
             @{@"Day2":@[
                 @"LeetCode485VC",
                 @"LeetCode283VC",
+                @"LeetCode26VC",
             ]},
         ];
     }
