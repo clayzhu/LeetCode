@@ -28,7 +28,48 @@ class LeetCode26Solution {
     
 public:
     int removeDuplicates(std::vector<int>& nums) {
-        return -1;
+#if 0   // Clay 解答
+        int length = nums.size();
+        int p = 0;
+        for (int i = 0; i < length; i ++) {
+            if (p == i) {
+                continue;
+            }
+            if (p < length - 1 &&
+                nums[p] >= nums[p + 1] &&
+                nums[p] != nums[i]) {
+                nums[p + 1] = nums[i];
+                
+                p ++;
+            } else if (p < length - 1 &&
+                       nums[p] < nums[p + 1]) {
+                p ++;
+            }
+        }
+        return p + 1;
+#else   // 参考解答
+        // 指针 i 进行数组遍历
+        int n = nums.size();
+        
+        // 指针 j 指向即将被赋值的位置
+        int j = 0;
+        
+        // 开始对数组进行遍历
+        for (int i = 0 ; i < n ; i++) {
+            
+            // 进行筛选
+            if ( i == 0 ||  nums[i] != nums[i - 1]) {
+                // 赋值
+                nums[j] = nums[i];
+                
+                // j 移动
+                j++;
+            }
+        }
+        
+        // 获取结果
+        return j ;
+#endif
     }
     
 };
