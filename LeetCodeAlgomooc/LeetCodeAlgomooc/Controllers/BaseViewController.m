@@ -24,7 +24,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self createNavItem];
     [self createLayout];
 }
 
@@ -39,10 +38,6 @@
 */
 
 #pragma mark - Setup
-- (void)createNavItem {
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"执行" style:UIBarButtonItemStylePlain target:self action:@selector(exeAlgorithm)];
-}
-
 - (void)createLayout {
     UIScrollView* scrollView = [[UIScrollView alloc] init];
     self.scrollView = scrollView;
@@ -81,10 +76,32 @@
     [inputLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(descLabel.mas_bottom).offset(8.0);
         make.left.mas_equalTo(8.0);
-        make.centerX.mas_equalTo(0.0);
     }];
     inputLabel.text = @"输入：";
     inputLabel.font = [UIFont boldSystemFontOfSize:14.0];
+    
+    UIButton* inputClearButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [scrollView addSubview:inputClearButton];
+    [inputClearButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.baseline.equalTo(inputLabel.mas_baseline);
+        make.left.equalTo(inputLabel.mas_right).offset(8.0);
+    }];
+    [inputClearButton setTitle:@"清空输入" forState:UIControlStateNormal];
+    [inputClearButton addTarget:self
+                         action:@selector(_inputClearAction:)
+               forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton* exeButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [scrollView addSubview:exeButton];
+    [exeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.baseline.equalTo(inputLabel.mas_baseline);
+//        make.right.equalTo(scrollView.mas_right).offset(-8.0);  // 这行不生效
+        make.right.equalTo(self.view.mas_right).offset(-8.0);
+    }];
+    [exeButton setTitle:@"执行" forState:UIControlStateNormal];
+    [exeButton addTarget:self
+                  action:@selector(_exeAlgorithmAction:)
+        forControlEvents:UIControlEventTouchUpInside];
     
     UITextView* inputTextView = [[UITextView alloc] init];
     self.inputTextView = inputTextView;
@@ -103,7 +120,6 @@
     [outputLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(inputTextView.mas_bottom).offset(8.0);
         make.left.mas_equalTo(8.0);
-        make.centerX.mas_equalTo(0.0);
     }];
     outputLabel.text = @"输出：";
     outputLabel.font = [UIFont boldSystemFontOfSize:14.0];
@@ -116,14 +132,23 @@
         make.left.mas_equalTo(8.0);
         make.centerX.mas_equalTo(0.0);
         make.height.mas_equalTo(50.0);
-        make.bottom.equalTo(scrollView.mas_bottom).offset(-8.0);
+        make.bottom.mas_equalTo(-8.0);
     }];
     outputTextView.layer.borderWidth = 0.5;
+    outputTextView.editable = NO;
 }
 
 #pragma mark - Action
 - (void)exeAlgorithm {
     NAMethodNotImplemented();
+}
+
+- (void)_inputClearAction:(UIButton*)sender {
+    self.inputTextView.text = @"";
+}
+
+- (void)_exeAlgorithmAction:(UIButton*)sender {
+    [self exeAlgorithm];
 }
 
 @end
