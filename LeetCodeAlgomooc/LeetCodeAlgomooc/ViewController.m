@@ -31,6 +31,7 @@
                 @"LeetCode 485、最大连续 1 的个数",
                 @"LeetCode 283、移动零",
                 @"LeetCode 26、删除有序数组中的重复项",
+                @"LeetCode 27、移除元素",
             ]},
         ];
     }
@@ -44,6 +45,7 @@
                 @"LeetCode485VC",
                 @"LeetCode283VC",
                 @"LeetCode26VC",
+                @"LeetCode27VC",
             ]},
         ];
     }
