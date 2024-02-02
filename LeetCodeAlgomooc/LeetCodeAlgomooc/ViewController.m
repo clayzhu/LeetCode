@@ -33,6 +33,9 @@
                 @"LeetCode 26、删除有序数组中的重复项",
                 @"LeetCode 27、移除元素",
             ]},
+            @{@"Day3":@[
+                @"LeetCode 19、删除链表的倒数第 N 个结点",
+            ]},
         ];
     }
     return _cellTextList;
@@ -46,6 +49,9 @@
                 @"LeetCode283VC",
                 @"LeetCode26VC",
                 @"LeetCode27VC",
+            ]},
+            @{@"Day3":@[
+                @"LeetCode19VC",
             ]},
         ];
     }
