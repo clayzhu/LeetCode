@@ -7,6 +7,8 @@
 
 #import "LeetCode160VC.h"
 
+#include "LeetCode160Solution.h"
+
 @interface LeetCode160VC ()
 
 @end
@@ -16,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // LeetCode 160、相交链表
+    self.descLabel.text = @"";
 }
 
 /*
