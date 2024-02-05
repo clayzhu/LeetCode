@@ -35,7 +35,15 @@ class LeetCode24Solution {
     
 public:
     ListNode* swapPairs(ListNode* head) {
-        return nullptr;
+        if (head == nullptr || head->next == nullptr) {
+            return head;
+        }
+        
+        ListNode* subHead = swapPairs(head->next->next);
+        ListNode* headNext = head->next;
+        headNext->next = head;
+        head->next = subHead;
+        return headNext;
     }
     
 };

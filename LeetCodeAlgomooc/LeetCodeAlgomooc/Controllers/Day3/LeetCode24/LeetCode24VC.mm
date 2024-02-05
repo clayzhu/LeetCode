@@ -45,7 +45,31 @@
 */
 
 - (void)exeAlgorithm {
+    ListNode* firstNode = nullptr;
+    ListNode* formerNode = nullptr;
+    NSArray* inputStrs = [self.inputTextView.text componentsSeparatedByString:@","];
+    for (int i = 0; i < inputStrs.count; i ++) {
+        int num = [inputStrs[i] intValue];
+        ListNode* currentNode = new ListNode(num);
+        if (i == 0) {
+            firstNode = currentNode;
+        } else {
+            formerNode->next = currentNode;
+        }
+        formerNode = currentNode;
+    }
     
+    LeetCode24Solution solution;
+    ListNode* resultFirstNode = solution.swapPairs(firstNode);
+    
+    NSMutableArray* outputNums = [NSMutableArray array];
+    ListNode* resultCurrentNode = resultFirstNode;
+    while (resultCurrentNode != nullptr) {
+        [outputNums addObject:@(resultCurrentNode->val)];
+        resultCurrentNode = resultCurrentNode->next;
+    }
+    NSString* output = [outputNums componentsJoinedByString:@","];
+    self.outputTextView.text = output;
 }
 
 @end
