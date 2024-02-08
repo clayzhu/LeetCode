@@ -40,7 +40,7 @@
 - (void)exeAlgorithm {
     NSArray* inputLines = [self.inputTextView.text componentsSeparatedByString:@"\n"];
     if (inputLines.count != 2) {
-        self.outputTextView.text = @"请输入两行内容，分别是2个链表";
+        self.outputTextView.text = @"请输入两行内容，每行分别是一个链表";
         return;
     }
     
