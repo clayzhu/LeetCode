@@ -39,6 +39,9 @@
                 @"LeetCode 160、相交链表",
                 @"LeetCode 203、移除链表元素",
             ]},
+            @{@"Day4":@[
+                @"LeetCode 21、合并两个有序链表",
+            ]},
         ];
     }
     return _cellTextList;
@@ -58,6 +61,9 @@
                 @"LeetCode24VC",
                 @"LeetCode160VC",
                 @"LeetCode203VC",
+            ]},
+            @{@"Day4":@[
+                @"LeetCode21VC",
             ]},
         ];
     }

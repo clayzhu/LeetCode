@@ -14,6 +14,7 @@
 		66B313152B70D328007323AE /* LeetCode24VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B313142B70D328007323AE /* LeetCode24VC.mm */; };
 		66B3131B2B710DF6007323AE /* LeetCode160VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B3131A2B710DF6007323AE /* LeetCode160VC.mm */; };
 		66E9D68F2B74D7E800CE13F1 /* LeetCode203VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66E9D68E2B74D7E700CE13F1 /* LeetCode203VC.mm */; };
+		66E9D6972B75207B00CE13F1 /* LeetCode21VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66E9D6962B75207B00CE13F1 /* LeetCode21VC.mm */; };
 		846B174C2B5673A3000C28D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B174B2B5673A3000C28D9 /* AppDelegate.m */; };
 		846B174F2B5673A3000C28D9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B174E2B5673A3000C28D9 /* SceneDelegate.m */; };
 		846B17522B5673A3000C28D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B17512B5673A3000C28D9 /* ViewController.m */; };
@@ -47,6 +48,9 @@
 		66E9D68D2B74D7E700CE13F1 /* LeetCode203VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode203VC.h; sourceTree = "<group>"; };
 		66E9D68E2B74D7E700CE13F1 /* LeetCode203VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode203VC.mm; sourceTree = "<group>"; };
 		66E9D6902B74D80500CE13F1 /* LeetCode203Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode203Solution.h; sourceTree = "<group>"; };
+		66E9D6952B75207B00CE13F1 /* LeetCode21VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode21VC.h; sourceTree = "<group>"; };
+		66E9D6962B75207B00CE13F1 /* LeetCode21VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode21VC.mm; sourceTree = "<group>"; };
+		66E9D6982B75209900CE13F1 /* LeetCode21Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode21Solution.h; sourceTree = "<group>"; };
 		69F383880C34361E1BB0BB6F /* Pods_LeetCodeAlgomooc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeetCodeAlgomooc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		846B17472B5673A3000C28D9 /* LeetCodeAlgomooc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCodeAlgomooc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846B174A2B5673A3000C28D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -214,6 +218,39 @@
 			path = LeetCode203;
 			sourceTree = "<group>";
 		};
+		66E9D6912B75202200CE13F1 /* Day4 */ = {
+			isa = PBXGroup;
+			children = (
+				66E9D6932B75204000CE13F1 /* LeetCode21 */,
+			);
+			path = Day4;
+			sourceTree = "<group>";
+		};
+		66E9D6922B75202F00CE13F1 /* Day4 */ = {
+			isa = PBXGroup;
+			children = (
+				66E9D6942B75204700CE13F1 /* LeetCode21 */,
+			);
+			path = Day4;
+			sourceTree = "<group>";
+		};
+		66E9D6932B75204000CE13F1 /* LeetCode21 */ = {
+			isa = PBXGroup;
+			children = (
+				66E9D6952B75207B00CE13F1 /* LeetCode21VC.h */,
+				66E9D6962B75207B00CE13F1 /* LeetCode21VC.mm */,
+			);
+			path = LeetCode21;
+			sourceTree = "<group>";
+		};
+		66E9D6942B75204700CE13F1 /* LeetCode21 */ = {
+			isa = PBXGroup;
+			children = (
+				66E9D6982B75209900CE13F1 /* LeetCode21Solution.h */,
+			);
+			path = LeetCode21;
+			sourceTree = "<group>";
+		};
 		7A829EE0F5FC4A06291719E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +305,7 @@
 				846B17662B567AA5000C28D9 /* BaseViewController.m */,
 				846B17642B567689000C28D9 /* Day2 */,
 				663C173F2B6CE1FD008DA812 /* Day3 */,
+				66E9D6912B75202200CE13F1 /* Day4 */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +335,7 @@
 			children = (
 				846B17702B56979A000C28D9 /* Day2 */,
 				663C17442B6CE22D008DA812 /* Day3 */,
+				66E9D6922B75202F00CE13F1 /* Day4 */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -451,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E9D6972B75207B00CE13F1 /* LeetCode21VC.mm in Sources */,
 				846B17522B5673A3000C28D9 /* ViewController.m in Sources */,
 				846B176E2B56814D000C28D9 /* LeetCode485VC.mm in Sources */,
 				66E9D68F2B74D7E800CE13F1 /* LeetCode203VC.mm in Sources */,
