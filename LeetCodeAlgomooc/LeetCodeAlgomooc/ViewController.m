@@ -37,6 +37,7 @@
                 @"LeetCode 19、删除链表的倒数第 N 个结点",
                 @"LeetCode 24、两两交换链表中的节点",
                 @"LeetCode 160、相交链表",
+                @"LeetCode 203、移除链表元素",
             ]},
         ];
     }
@@ -56,6 +57,7 @@
                 @"LeetCode19VC",
                 @"LeetCode24VC",
                 @"LeetCode160VC",
+                @"LeetCode203VC",
             ]},
         ];
     }
