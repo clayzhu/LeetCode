@@ -42,6 +42,9 @@
             @{@"Day4":@[
                 @"LeetCode 21、合并两个有序链表",
             ]},
+            @{@"Day29":@[
+                @"LeetCode 206、反转链表",
+            ]},
         ];
     }
     return _cellTextList;
@@ -64,6 +67,9 @@
             ]},
             @{@"Day4":@[
                 @"LeetCode21VC",
+            ]},
+            @{@"Day29":@[
+                @"LeetCode206VC",
             ]},
         ];
     }

@@ -10,6 +10,7 @@
 		306D22559416338AB65A73DE /* Pods_LeetCodeAlgomooc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F383880C34361E1BB0BB6F /* Pods_LeetCodeAlgomooc.framework */; };
 		663C173C2B693A54008DA812 /* LeetCode27VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 663C173B2B693A53008DA812 /* LeetCode27VC.mm */; };
 		663C17432B6CE21D008DA812 /* LeetCode19VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 663C17422B6CE21D008DA812 /* LeetCode19VC.mm */; };
+		6646B2812B8651B600BCA809 /* LeetCode206VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6646B2802B8651B600BCA809 /* LeetCode206VC.mm */; };
 		66922CD52B577A94000C52B5 /* LeetCode283VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66922CD42B577A94000C52B5 /* LeetCode283VC.mm */; };
 		66B313152B70D328007323AE /* LeetCode24VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B313142B70D328007323AE /* LeetCode24VC.mm */; };
 		66B3131B2B710DF6007323AE /* LeetCode160VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B3131A2B710DF6007323AE /* LeetCode160VC.mm */; };
@@ -35,6 +36,9 @@
 		663C17412B6CE21D008DA812 /* LeetCode19VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode19VC.h; sourceTree = "<group>"; };
 		663C17422B6CE21D008DA812 /* LeetCode19VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode19VC.mm; sourceTree = "<group>"; };
 		663C17462B6CE24F008DA812 /* LeetCode19Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode19Solution.h; sourceTree = "<group>"; };
+		6646B27F2B8651B600BCA809 /* LeetCode206VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode206VC.h; sourceTree = "<group>"; };
+		6646B2802B8651B600BCA809 /* LeetCode206VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode206VC.mm; sourceTree = "<group>"; };
+		6646B2822B8651D200BCA809 /* LeetCode206Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode206Solution.h; sourceTree = "<group>"; };
 		66922CD12B5779DE000C52B5 /* LeetCode485Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode485Solution.h; sourceTree = "<group>"; };
 		66922CD32B577A94000C52B5 /* LeetCode283VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode283VC.h; sourceTree = "<group>"; };
 		66922CD42B577A94000C52B5 /* LeetCode283VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode283VC.mm; sourceTree = "<group>"; };
@@ -148,6 +152,39 @@
 				663C17462B6CE24F008DA812 /* LeetCode19Solution.h */,
 			);
 			path = LeetCode19;
+			sourceTree = "<group>";
+		};
+		6646B27B2B86518400BCA809 /* Day29 */ = {
+			isa = PBXGroup;
+			children = (
+				6646B27D2B86519C00BCA809 /* LeetCode206 */,
+			);
+			path = Day29;
+			sourceTree = "<group>";
+		};
+		6646B27C2B86518E00BCA809 /* Day29 */ = {
+			isa = PBXGroup;
+			children = (
+				6646B27E2B8651A000BCA809 /* LeetCode206 */,
+			);
+			path = Day29;
+			sourceTree = "<group>";
+		};
+		6646B27D2B86519C00BCA809 /* LeetCode206 */ = {
+			isa = PBXGroup;
+			children = (
+				6646B27F2B8651B600BCA809 /* LeetCode206VC.h */,
+				6646B2802B8651B600BCA809 /* LeetCode206VC.mm */,
+			);
+			path = LeetCode206;
+			sourceTree = "<group>";
+		};
+		6646B27E2B8651A000BCA809 /* LeetCode206 */ = {
+			isa = PBXGroup;
+			children = (
+				6646B2822B8651D200BCA809 /* LeetCode206Solution.h */,
+			);
+			path = LeetCode206;
 			sourceTree = "<group>";
 		};
 		66922CD22B577A77000C52B5 /* LeetCode283 */ = {
@@ -306,6 +343,7 @@
 				846B17642B567689000C28D9 /* Day2 */,
 				663C173F2B6CE1FD008DA812 /* Day3 */,
 				66E9D6912B75202200CE13F1 /* Day4 */,
+				6646B27B2B86518400BCA809 /* Day29 */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -336,6 +374,7 @@
 				846B17702B56979A000C28D9 /* Day2 */,
 				663C17442B6CE22D008DA812 /* Day3 */,
 				66E9D6922B75202F00CE13F1 /* Day4 */,
+				6646B27C2B86518E00BCA809 /* Day29 */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -492,6 +531,7 @@
 			files = (
 				66E9D6972B75207B00CE13F1 /* LeetCode21VC.mm in Sources */,
 				846B17522B5673A3000C28D9 /* ViewController.m in Sources */,
+				6646B2812B8651B600BCA809 /* LeetCode206VC.mm in Sources */,
 				846B176E2B56814D000C28D9 /* LeetCode485VC.mm in Sources */,
 				66E9D68F2B74D7E800CE13F1 /* LeetCode203VC.mm in Sources */,
 				846B17672B567AA5000C28D9 /* BaseViewController.m in Sources */,
