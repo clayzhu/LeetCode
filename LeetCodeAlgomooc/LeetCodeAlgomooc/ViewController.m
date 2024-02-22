@@ -42,6 +42,9 @@
             @{@"Day4":@[
                 @"LeetCode 21、合并两个有序链表",
             ]},
+            @{@"Day20":@[
+                @"LeetCode 142、环形链表 II",
+            ]},
             @{@"Day29":@[
                 @"LeetCode 206、反转链表",
             ]},
@@ -67,6 +70,9 @@
             ]},
             @{@"Day4":@[
                 @"LeetCode21VC",
+            ]},
+            @{@"Day20":@[
+                @"LeetCode142VC",
             ]},
             @{@"Day29":@[
                 @"LeetCode206VC",
