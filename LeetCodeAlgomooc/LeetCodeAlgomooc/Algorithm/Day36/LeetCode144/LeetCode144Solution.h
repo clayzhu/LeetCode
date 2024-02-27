@@ -97,6 +97,53 @@ public:
         }
         
         return result;
+#elif 0 // 94. 中序遍历 - 迭代算法: https://leetcode.cn/problems/binary-tree-inorder-traversal/
+        std::vector<int> result;
+        if (root == nullptr) {
+            return result;
+        }
+        
+        TreeNode* node = root;
+        std::stack<TreeNode*> stack;
+        while (node != nullptr || !stack.empty()) {
+            while (node != nullptr) {
+                stack.push(node);
+                node = node->left;
+            }
+            
+            node = stack.top();
+            stack.pop();
+            result.emplace_back(node->val);
+            node = node->right;
+        }
+        
+        return result;
+#elif 0 // 145. 后序遍历 - 迭代算法: https://leetcode.cn/problems/binary-tree-postorder-traversal/
+        std::vector<int> result;
+        if (root == nullptr) {
+            return result;
+        }
+        
+        TreeNode* node = root, *pre = nullptr;
+        std::stack<TreeNode*> stack;
+        while (node != nullptr || !stack.empty()) {
+            while (node != nullptr) {
+                stack.push(node);
+                node = node->left;
+            }
+            
+            node = stack.top();
+            if (node->right == nullptr || node->right == pre) {
+                stack.pop();
+                result.emplace_back(node->val);
+                pre = node;
+                node = nullptr;
+            } else {
+                node = node->right;
+            }
+        }
+        
+        return result;
 #endif
     }
     
