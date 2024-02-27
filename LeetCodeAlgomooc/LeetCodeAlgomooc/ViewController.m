@@ -49,6 +49,9 @@
             @{@"Day29":@[
                 @"LeetCode 206、反转链表",
             ]},
+            @{@"Day36":@[
+                @"LeetCode 144、二叉树的前序遍历",
+            ]},
         ];
     }
     return _cellTextList;
@@ -78,6 +81,9 @@
             ]},
             @{@"Day29":@[
                 @"LeetCode206VC",
+            ]},
+            @{@"Day36":@[
+                @"LeetCode144VC",
             ]},
         ];
     }
