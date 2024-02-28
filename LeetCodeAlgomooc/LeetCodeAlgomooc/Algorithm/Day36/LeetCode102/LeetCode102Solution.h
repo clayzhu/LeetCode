@@ -39,6 +39,7 @@ class LeetCode102Solution {
     
 public:
     std::vector<std::vector<int>> levelOrder(TreeNode* root) {
+#if 0   // 广度优先搜索
         std::vector<std::vector<int>> result;
         if (root == nullptr) {
             return result;
@@ -69,6 +70,25 @@ public:
         }
         
         return result;
+#else   // 深度优先搜索
+        std::vector<std::vector<int>> result;
+        traversal(root, 1, result);
+        return result;
+#endif
+    }
+    
+private:
+    void traversal(TreeNode *root, int level, std::vector<std::vector<int>> &result) {
+        if (!root) {
+            return;
+        }
+        // 保证每一层只有一个 vector
+        if (level > result.size()) {
+            result.push_back(std::vector<int>());
+        }
+        result[level-1].push_back(root->val);
+        traversal(root->left, level+1, result);
+        traversal(root->right, level+1, result);
     }
     
 };
