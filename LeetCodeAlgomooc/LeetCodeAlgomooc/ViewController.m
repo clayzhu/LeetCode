@@ -49,6 +49,9 @@
             @{@"Day29":@[
                 @"LeetCode 206、反转链表",
             ]},
+            @{@"Day30":@[
+                @"LeetCode 56、合并区间",
+            ]},
             @{@"Day36":@[
                 @"LeetCode 144、二叉树的前序遍历",
                 @"LeetCode 102、二叉树的层序遍历",
@@ -82,6 +85,9 @@
             ]},
             @{@"Day29":@[
                 @"LeetCode206VC",
+            ]},
+            @{@"Day30":@[
+                @"LeetCode56VC",
             ]},
             @{@"Day36":@[
                 @"LeetCode144VC",
