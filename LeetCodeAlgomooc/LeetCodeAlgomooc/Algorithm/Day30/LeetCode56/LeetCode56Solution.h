@@ -34,6 +34,10 @@ public:
         }
         
         std::sort(intervals.begin(), intervals.end());
+        // 自定义排序规则的写法之一
+//        std::sort(intervals.begin(), intervals.end(), [](std::vector<int>& o1, std::vector<int>& o2) {
+//            return o1[0] < o2[0];
+//        });
         
         std::vector<std::vector<int>> merged_intervals;
         for (int i = 0; i < intervals.size(); i ++) {

@@ -56,6 +56,9 @@
                 @"LeetCode 144、二叉树的前序遍历",
                 @"LeetCode 102、二叉树的层序遍历",
             ]},
+            @{@"Day37":@[
+                @"LeetCode 226、翻转二叉树",
+            ]},
         ];
     }
     return _cellTextList;
@@ -92,6 +95,9 @@
             @{@"Day36":@[
                 @"LeetCode144VC",
                 @"LeetCode102VC",
+            ]},
+            @{@"Day37":@[
+                @"LeetCode226VC",
             ]},
         ];
     }
