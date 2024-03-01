@@ -20,6 +20,7 @@
 		66B313152B70D328007323AE /* LeetCode24VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B313142B70D328007323AE /* LeetCode24VC.mm */; };
 		66B3131B2B710DF6007323AE /* LeetCode160VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B3131A2B710DF6007323AE /* LeetCode160VC.mm */; };
 		66B813A52B90DE84009805AF /* LeetCode226VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B813A42B90DE84009805AF /* LeetCode226VC.mm */; };
+		66B813AB2B91647C009805AF /* LeetCode105VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B813AA2B91647C009805AF /* LeetCode105VC.mm */; };
 		66E9D68F2B74D7E800CE13F1 /* LeetCode203VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66E9D68E2B74D7E700CE13F1 /* LeetCode203VC.mm */; };
 		66E9D6972B75207B00CE13F1 /* LeetCode21VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66E9D6962B75207B00CE13F1 /* LeetCode21VC.mm */; };
 		846B174C2B5673A3000C28D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B174B2B5673A3000C28D9 /* AppDelegate.m */; };
@@ -73,6 +74,9 @@
 		66B813A32B90DE84009805AF /* LeetCode226VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode226VC.h; sourceTree = "<group>"; };
 		66B813A42B90DE84009805AF /* LeetCode226VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode226VC.mm; sourceTree = "<group>"; };
 		66B813A62B90DE9C009805AF /* LeetCode226Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode226Solution.h; sourceTree = "<group>"; };
+		66B813A92B91647C009805AF /* LeetCode105VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode105VC.h; sourceTree = "<group>"; };
+		66B813AA2B91647C009805AF /* LeetCode105VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode105VC.mm; sourceTree = "<group>"; };
+		66B813AC2B916497009805AF /* LeetCode105Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode105Solution.h; sourceTree = "<group>"; };
 		66E9D68D2B74D7E700CE13F1 /* LeetCode203VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode203VC.h; sourceTree = "<group>"; };
 		66E9D68E2B74D7E700CE13F1 /* LeetCode203VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode203VC.mm; sourceTree = "<group>"; };
 		66E9D6902B74D80500CE13F1 /* LeetCode203Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode203Solution.h; sourceTree = "<group>"; };
@@ -265,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				6646B2932B8DC2D400BCA809 /* LeetCode144 */,
+				66B813A72B91645F009805AF /* LeetCode105 */,
 				6646B2992B8E3AEF00BCA809 /* LeetCode102 */,
 			);
 			path = Day36;
@@ -274,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				6646B2942B8DC2D800BCA809 /* LeetCode144 */,
+				66B813A82B916467009805AF /* LeetCode105 */,
 				6646B29A2B8E3AF500BCA809 /* LeetCode102 */,
 			);
 			path = Day36;
@@ -428,6 +434,23 @@
 				66B813A62B90DE9C009805AF /* LeetCode226Solution.h */,
 			);
 			path = LeetCode226;
+			sourceTree = "<group>";
+		};
+		66B813A72B91645F009805AF /* LeetCode105 */ = {
+			isa = PBXGroup;
+			children = (
+				66B813A92B91647C009805AF /* LeetCode105VC.h */,
+				66B813AA2B91647C009805AF /* LeetCode105VC.mm */,
+			);
+			path = LeetCode105;
+			sourceTree = "<group>";
+		};
+		66B813A82B916467009805AF /* LeetCode105 */ = {
+			isa = PBXGroup;
+			children = (
+				66B813AC2B916497009805AF /* LeetCode105Solution.h */,
+			);
+			path = LeetCode105;
 			sourceTree = "<group>";
 		};
 		66E9D68B2B74D7AE00CE13F1 /* LeetCode203 */ = {
@@ -741,6 +764,7 @@
 				846B17672B567AA5000C28D9 /* BaseViewController.m in Sources */,
 				66B313152B70D328007323AE /* LeetCode24VC.mm in Sources */,
 				663C17432B6CE21D008DA812 /* LeetCode19VC.mm in Sources */,
+				66B813AB2B91647C009805AF /* LeetCode105VC.mm in Sources */,
 				846B174C2B5673A3000C28D9 /* AppDelegate.m in Sources */,
 				846B175D2B5673AE000C28D9 /* main.m in Sources */,
 				846B174F2B5673A3000C28D9 /* SceneDelegate.m in Sources */,
