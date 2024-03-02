@@ -11,6 +11,9 @@
 #include <queue>
 #include <vector>
 
+#ifndef TreeNode_h
+#define TreeNode_h
+
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -19,6 +22,8 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
+
+#endif /* TreeNode_h */
 
 /// LeetCode 102、二叉树的层序遍历
 ///
