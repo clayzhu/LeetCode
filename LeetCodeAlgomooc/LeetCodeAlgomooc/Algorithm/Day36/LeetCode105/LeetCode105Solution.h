@@ -46,7 +46,45 @@ class LeetCode105Solution {
     
 public:
     TreeNode* buildTree(std::vector<int>& preorder, std::vector<int>& inorder) {
-        return nullptr;
+        int size = inorder.size();
+        for (int i = 0; i < size; i ++) {
+            inorder_index[inorder[i]] = i;
+        }
+        
+        return buildTreeInner(preorder, inorder, 0, size - 1, 0, size - 1);
+    }
+    
+private:
+    std::unordered_map<int, int> inorder_index;
+    
+    TreeNode* buildTreeInner(std::vector<int>& preorder,
+                             std::vector<int>& inorder,
+                             int preorder_left,
+                             int preorder_right,
+                             int inorder_left,
+                             int inorder_right) {
+        if (preorder_left > preorder_right) {
+            return nullptr;
+        }
+        
+        int root = preorder[preorder_left];
+        int root_index_inorder = inorder_index[root];
+        int left_subtree_size = root_index_inorder - inorder_left;
+        
+        TreeNode* root_node = new TreeNode(root);
+        root_node->left = buildTreeInner(preorder,
+                                         inorder,
+                                         preorder_left + 1,
+                                         preorder_left + left_subtree_size,
+                                         inorder_left,
+                                         root_index_inorder - 1);
+        root_node->right = buildTreeInner(preorder,
+                                          inorder,
+                                          preorder_left + 1 + left_subtree_size,
+                                          preorder_right,
+                                          root_index_inorder + 1,
+                                          inorder_right);
+        return root_node;
     }
     
 };
