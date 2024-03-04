@@ -53,6 +53,10 @@ public:
         }
         return r;
 #elif 0 // 矩阵快速幂 // TODO: zg UNDEFINED Mar 4, 2024, 22:58
+#elif 0 // 通项公式
+        double sqrt5 = sqrt(5);
+        double fibn = pow((1 + sqrt5) / 2, n + 1) - pow((1 - sqrt5) / 2, n + 1);
+        return (int)round(fibn / sqrt5);
 #endif
     }
     
