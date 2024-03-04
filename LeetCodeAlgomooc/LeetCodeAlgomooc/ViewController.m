@@ -60,6 +60,9 @@
             @{@"Day37":@[
                 @"LeetCode 226、翻转二叉树",
             ]},
+            @{@"Day43":@[
+                @"LeetCode 70、爬楼梯",
+            ]},
         ];
     }
     return _cellTextList;
@@ -100,6 +103,9 @@
             ]},
             @{@"Day37":@[
                 @"LeetCode226VC",
+            ]},
+            @{@"Day43":@[
+                @"LeetCode70VC",
             ]},
         ];
     }
