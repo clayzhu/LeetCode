@@ -31,6 +31,7 @@ class LeetCode70Solution {
     
 public:
     int climbStairs(int n) {
+#if 0   // 转移方程
         if (n == 1) {
             return 1;
         }
@@ -43,6 +44,16 @@ public:
         }
         
         return dp[n];
+#elif 1 // 滚动数组
+        int p = 0, q = 0, r = 1;
+        for (int i = 1; i <= n; ++i) {
+            p = q;
+            q = r;
+            r = p + q;
+        }
+        return r;
+#elif 0 // 矩阵快速幂 // TODO: zg UNDEFINED Mar 4, 2024, 22:58
+#endif
     }
     
 };
