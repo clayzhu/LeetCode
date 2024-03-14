@@ -56,6 +56,9 @@
                 @"LeetCode 90、子集 II",
                 @"LeetCode 78、子集",
             ]},
+            @{@"Day33":@[
+                @"LeetCode 39、组合总和",
+            ]},
             @{@"Day36":@[
                 @"LeetCode 144、二叉树的前序遍历",
                 @"LeetCode 105、从前序与中序遍历序列构造二叉树",
@@ -103,6 +106,9 @@
             @{@"Day32":@[
                 @"LeetCode90VC",
                 @"LeetCode78VC",
+            ]},
+            @{@"Day33":@[
+                @"LeetCode39VC",
             ]},
             @{@"Day36":@[
                 @"LeetCode144VC",
