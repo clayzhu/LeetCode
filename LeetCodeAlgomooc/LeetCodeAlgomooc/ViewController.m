@@ -53,6 +53,7 @@
                 @"LeetCode 56、合并区间",
             ]},
             @{@"Day32":@[
+                @"LeetCode 90、子集 II",
                 @"LeetCode 78、子集",
             ]},
             @{@"Day36":@[
@@ -100,6 +101,7 @@
                 @"LeetCode56VC",
             ]},
             @{@"Day32":@[
+                @"LeetCode90VC",
                 @"LeetCode78VC",
             ]},
             @{@"Day36":@[
