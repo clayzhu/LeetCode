@@ -11,6 +11,7 @@
 		6605A8B72BA2D55E002875EA /* LeetCode78VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6605A8B62BA2D55E002875EA /* LeetCode78VC.mm */; };
 		6605A8BD2BA323F8002875EA /* LeetCode90VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6605A8BC2BA323F8002875EA /* LeetCode90VC.mm */; };
 		6605A8C52BA33ABA002875EA /* LeetCode39VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6605A8C42BA33ABA002875EA /* LeetCode39VC.mm */; };
+		6605A8CB2BA34985002875EA /* LeetCode46VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6605A8CA2BA34984002875EA /* LeetCode46VC.mm */; };
 		663C173C2B693A54008DA812 /* LeetCode27VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 663C173B2B693A53008DA812 /* LeetCode27VC.mm */; };
 		663C17432B6CE21D008DA812 /* LeetCode19VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 663C17422B6CE21D008DA812 /* LeetCode19VC.mm */; };
 		6646B2812B8651B600BCA809 /* LeetCode206VC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6646B2802B8651B600BCA809 /* LeetCode206VC.mm */; };
@@ -50,6 +51,9 @@
 		6605A8C32BA33ABA002875EA /* LeetCode39VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode39VC.h; sourceTree = "<group>"; };
 		6605A8C42BA33ABA002875EA /* LeetCode39VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode39VC.mm; sourceTree = "<group>"; };
 		6605A8C62BA33AD4002875EA /* LeetCode39Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode39Solution.h; sourceTree = "<group>"; };
+		6605A8C92BA34984002875EA /* LeetCode46VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode46VC.h; sourceTree = "<group>"; };
+		6605A8CA2BA34984002875EA /* LeetCode46VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode46VC.mm; sourceTree = "<group>"; };
+		6605A8CC2BA3499F002875EA /* LeetCode46Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode46Solution.h; sourceTree = "<group>"; };
 		663C173A2B693A53008DA812 /* LeetCode27VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode27VC.h; sourceTree = "<group>"; };
 		663C173B2B693A53008DA812 /* LeetCode27VC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeetCode27VC.mm; sourceTree = "<group>"; };
 		663C173E2B693A84008DA812 /* LeetCode27Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode27Solution.h; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 			children = (
 				6605A8B92BA323E2002875EA /* LeetCode90 */,
 				6605A8B22BA2D534002875EA /* LeetCode78 */,
+				6605A8C72BA34960002875EA /* LeetCode46 */,
 			);
 			path = Day32;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			children = (
 				6605A8BA2BA323E7002875EA /* LeetCode90 */,
 				6605A8B42BA2D547002875EA /* LeetCode78 */,
+				6605A8C82BA3496A002875EA /* LeetCode46 */,
 			);
 			path = Day32;
 			sourceTree = "<group>";
@@ -225,6 +231,23 @@
 				6605A8C62BA33AD4002875EA /* LeetCode39Solution.h */,
 			);
 			path = LeetCode39;
+			sourceTree = "<group>";
+		};
+		6605A8C72BA34960002875EA /* LeetCode46 */ = {
+			isa = PBXGroup;
+			children = (
+				6605A8C92BA34984002875EA /* LeetCode46VC.h */,
+				6605A8CA2BA34984002875EA /* LeetCode46VC.mm */,
+			);
+			path = LeetCode46;
+			sourceTree = "<group>";
+		};
+		6605A8C82BA3496A002875EA /* LeetCode46 */ = {
+			isa = PBXGroup;
+			children = (
+				6605A8CC2BA3499F002875EA /* LeetCode46Solution.h */,
+			);
+			path = LeetCode46;
 			sourceTree = "<group>";
 		};
 		663C17392B693A29008DA812 /* LeetCode27 */ = {
@@ -901,6 +924,7 @@
 				6646B2812B8651B600BCA809 /* LeetCode206VC.mm in Sources */,
 				846B176E2B56814D000C28D9 /* LeetCode485VC.mm in Sources */,
 				6646B2972B8DC2E900BCA809 /* LeetCode144VC.mm in Sources */,
+				6605A8CB2BA34985002875EA /* LeetCode46VC.mm in Sources */,
 				6605A8C52BA33ABA002875EA /* LeetCode39VC.mm in Sources */,
 				66E9D68F2B74D7E800CE13F1 /* LeetCode203VC.mm in Sources */,
 				846B17672B567AA5000C28D9 /* BaseViewController.m in Sources */,
