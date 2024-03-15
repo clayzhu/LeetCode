@@ -56,6 +56,7 @@
                 @"LeetCode 90、子集 II",
                 @"LeetCode 78、子集",
                 @"LeetCode 46、全排列",
+                @"LeetCode 47、全排列 II",
             ]},
             @{@"Day33":@[
                 @"LeetCode 39、组合总和",
@@ -108,6 +109,7 @@
                 @"LeetCode90VC",
                 @"LeetCode78VC",
                 @"LeetCode46VC",
+                @"LeetCode47VC",
             ]},
             @{@"Day33":@[
                 @"LeetCode39VC",
