@@ -49,6 +49,9 @@
             @{@"Day20":@[
                 @"LeetCode 142、环形链表 II",
             ]},
+            @{@"Day24":@[
+                @"LeetCode 35、搜索插入位置",
+            ]},
             @{@"Day29":@[
                 @"LeetCode 206、反转链表",
             ]},
@@ -104,6 +107,9 @@
             ]},
             @{@"Day20":@[
                 @"LeetCode142VC",
+            ]},
+            @{@"Day24":@[
+                @"LeetCode35VC",
             ]},
             @{@"Day29":@[
                 @"LeetCode206VC",
